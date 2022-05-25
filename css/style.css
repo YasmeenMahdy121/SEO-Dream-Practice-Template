@@ -18,11 +18,6 @@ body {
   line-height: 45px;
   margin-bottom: 45px;
 }
-@media screen and (max-width: 768px) {
-  #contact-us .contact-us-container .contact-us-heading h3, #portfolio .portfolio-heading h3, #services .services-heading h3, #about-us .right-content h3 {
-    text-align: center;
-  }
-}
 #contact-us .contact-us-container .contact-us-heading h3 span:first-child, #portfolio .portfolio-heading h3 span:first-child, #services .services-heading h3 span:first-child, #about-us .right-content h3 span:first-child {
   color: #33ccc5;
 }
@@ -696,6 +691,11 @@ nav .navbar-btn:hover {
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  #about-us .right-content h3 {
+    text-align: center;
+  }
+}
 #about-us .right-content .projects strong {
   font-size: 38px;
   font-weight: 800;
@@ -868,6 +868,11 @@ nav .navbar-btn:hover {
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  #portfolio .portfolio-heading {
+    text-align: start !important;
+  }
+}
 #portfolio .slider .slides {
   overflow: hidden;
   width: 100%;
@@ -909,6 +914,18 @@ nav .navbar-btn:hover {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  #portfolio .slider .slides .slide .card-img .hover-content a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #portfolio .slider .slides .slide .card-img .hover-content a {
+    font-size: 13px;
+    font-weight: 600;
+  }
 }
 #portfolio .slider .manual-navigation {
   display: flex;

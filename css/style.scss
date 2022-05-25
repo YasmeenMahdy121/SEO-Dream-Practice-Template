@@ -39,9 +39,6 @@ body{
     font-weight: 800;
     line-height: 45px;
     margin-bottom: 45px;
-    @media screen and(max-width:768px) {
-        text-align: center;
-    }
     span:first-child{
         color: $main-color;
     }
@@ -514,6 +511,9 @@ nav{
         }
         h3{
             @extend %common-h3;
+            @media screen and(max-width:768px) {
+                text-align: center;
+            }
         }
         .projects{
             strong{
@@ -607,6 +607,9 @@ nav{
         animation: portfolio-left 1s ease-out forwards .4s;
         animation-play-state: paused;
         @include xMove-animation(portfolio-left, translateX(-200px), translateX(0));
+        @media screen and(max-width:768px) {
+            text-align: start !important;
+        }
     }
     .slider{
         .slides{
@@ -644,6 +647,14 @@ nav{
                             font-size: 20px;
                             font-weight: 700;
                             color: #fff;
+                            text-align: center;
+                            @media screen and(max-width:1024px) {
+                                font-size: 15px;
+                            }
+                            @media screen and(max-width:414px) {
+                                font-size: 13px;
+                                font-weight: 600;
+                            }
                         }
 
                     }
