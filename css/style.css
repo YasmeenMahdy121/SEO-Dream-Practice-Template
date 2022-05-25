@@ -1075,10 +1075,21 @@ nav .navbar-btn:hover {
 /* end contact us */
 /* start footer */
 footer {
-  padding: 30px 0;
+  padding: 30px;
   font-size: 15px;
   line-height: 30px;
   color: #2a2a2a;
+  text-align: center;
+}
+@media screen and (max-width: 540px) {
+  footer {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 414px) {
+  footer {
+    font-size: 10px;
+  }
 }
 footer span > a {
   color: #33ccc5;
